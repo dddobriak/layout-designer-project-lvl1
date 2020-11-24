@@ -1,1 +1,50 @@
 /** CSS STYLE **/
+:root {
+  --white: #fff;
+  --transp-white: #d7ccc0;
+  --light: #f5f4f0;
+  --primary: #fe8a02;
+  --primary-dark: #42413c;
+  --dark: #2a2626;
+  --transp-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+body {
+  color: var(--dark);
+  font: 16px/1.6em 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Neucha', cursive;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+header,
+section,
+footer {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
