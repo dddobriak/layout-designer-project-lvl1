@@ -85,6 +85,11 @@ h3,
   font-size: 34px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   position: relative;
 
@@ -116,14 +121,40 @@ h3,
 }
 
 header {
-  position: relative;
-
   min-height: 580px;
 
   background-color: var(--light);
 }
 
-header::before {
+header h1 {
+  position: relative;
+  z-index: 200;
+
+  margin-bottom: 180px;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  right: -270px;
+  z-index: 100;
+
+  margin-bottom: -100px;
+}
+
+.header-desc {
+  position: relative;
+  z-index: 200;
+
+  margin-bottom: 38px;
+}
+
+.bg-image {
+  position: relative;
+  z-index: 100;
+}
+
+.bg-image::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -138,32 +169,23 @@ header::before {
   content: '';
 }
 
-header h1 {
-  position: absolute;
-  z-index: 200;
-}
-
-header img {
-  position: relative;
-  top: -100px;
-  right: -270px;
-  z-index: 100;
-
-  margin-bottom: -100px;
-}
-
-.header-desc {
-  position: relative;
-  z-index: 200;
-
+.row {
   display: flex;
   flex-wrap: wrap;
-
+  
   margin: 0 -15px;
-  margin-bottom: 38px;
 }
 
-.header-desc article {
+.row-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  margin: 100px 0 20px;
+}
+
+.col-50 {
   flex-basis: 50%;
   padding: 0 15px;
 }
@@ -172,6 +194,12 @@ header img {
   color: var(--white);
 
   background-color: var(--primary-dark);
+}
+
+.section-video {
+  position: relative;
+  z-index: 200;
+  margin-bottom: -200px;
 }
 
 .section-video h1 {
@@ -184,7 +212,7 @@ header img {
 
 .section-video iframe {
   display: block;
-  margin: 0 auto -200px;
+  margin: 0 auto;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
@@ -255,4 +283,40 @@ header img {
 
 .main-nav li.nav-item a:hover h3 {
   color: var(--white);
+}
+
+.section-light {
+  background: var(--light);
+}
+
+.section-brown {
+  color: var(--white);
+  background: var(--brown);
+}
+
+.cognitive-type img {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.cognitive-type h2::before {
+  font-size: 24px;
+  
+  display: block;
+  
+  content: 'Когнитивные искажения';
+}
+
+.cognitive-type.section-light h2::before {
+  line-height: 1.2em;
+  color: var(--transp-dark);
+}
+
+.cognitive-type.section-light .row-title {
+  background: var(--brown);
+  color: var(--white);
+}
+
+.cognitive-type.section-brown .row-title {
+  background: var(--white);
+  color: var(--primary-dark);
 }
