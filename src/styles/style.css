@@ -46,6 +46,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -319,4 +323,8 @@ header img {
 .cognitive-type.section-brown .row-title {
   background: var(--white);
   color: var(--primary-dark);
+}
+
+.cognitive-type.section-brown .container .row:first-child {
+  flex-direction: row-reverse;
 }
