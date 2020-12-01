@@ -1,5 +1,6 @@
 /** CSS STYLE **/
 
+/* -- Fonts */
 /* Open Sans cyrillic */
 @font-face {
   font-weight: 400;
@@ -39,6 +40,7 @@
   src: url(https://fonts.gstatic.com/s/neucha/v12/q5uGsou0JOdh94bfvQlt.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* end Fonts -- */
 
 :root {
   --white: #fff;
@@ -52,6 +54,7 @@
   --blue: #1085c5;
 }
 
+/* Tag styles */
 * {
   box-sizing: border-box;
 }
@@ -111,7 +114,9 @@ input {
 a {
   color: var(--blue);
 }
+/* end Tag styles -- */
 
+/* -- Default classes */
 .container {
   position: relative;
 
@@ -163,35 +168,6 @@ a {
   align-items: center;
 }
 
-header {
-  min-height: 580px;
-
-  background-color: var(--light);
-}
-
-header h1 {
-  position: relative;
-  z-index: 200;
-
-  margin-bottom: 180px;
-}
-
-header img {
-  position: absolute;
-  top: 0;
-  right: -270px;
-  z-index: 100;
-
-  margin-bottom: -100px;
-}
-
-.header-desc {
-  position: relative;
-  z-index: 200;
-
-  margin-bottom: 38px;
-}
-
 .bg-image {
   position: relative;
   z-index: 100;
@@ -236,6 +212,37 @@ header img {
 .col-50 {
   flex-basis: 50%;
   padding: 0 15px;
+}
+/* end Default classes -- */
+
+/* -- Elements */
+header {
+  min-height: 580px;
+
+  background-color: var(--light);
+}
+
+header h1 {
+  position: relative;
+  z-index: 200;
+
+  margin-bottom: 180px;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  right: -270px;
+  z-index: 100;
+
+  margin-bottom: -100px;
+}
+
+.header-desc {
+  position: relative;
+  z-index: 200;
+
+  margin-bottom: 38px;
 }
 
 .section-dark {
@@ -410,3 +417,4 @@ header img {
 .form-subscripe p {
   margin: 0;
 }
+/* end Elements -- */
