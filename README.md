@@ -1,2 +1,1 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/dddobriak/layout-designer-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/dddobriak/layout-designer-project-lvl1/actions)
+http://pavelt-layout.surge.sh/
