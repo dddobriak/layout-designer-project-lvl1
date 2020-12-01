@@ -74,11 +74,17 @@ body {
 }
 
 h1,
+.style-h1,
 h2,
+.style-h2,
 h3,
+.style-h3,
 h4,
+.style-h4,
 h5,
-h6 {
+.style-h5,
+h6,
+.style-h6 {
   margin: 0;
   padding: 0;
 
@@ -90,17 +96,17 @@ h6 {
 }
 
 h1,
-.size-h1 {
+.style-h1 {
   font-size: 72px;
 }
 
 h2,
-.size-h2 {
+.style-h2 {
   font-size: 60px;
 }
 
 h3,
-.size-h3 {
+.style-h3 {
   font-size: 34px;
 }
 
@@ -302,7 +308,8 @@ header img {
 .main-nav li {
   display: flex;
 
-  width: 33.3333%;
+  flex-basis: 33.3333%;
+  flex-grow: 1;
 
   padding: 10px 15px;
 
@@ -313,7 +320,7 @@ header img {
   text-decoration: none;
 }
 
-.main-nav li.nav-header h2 {
+.main-nav li.nav-header .style-h2 {
   color: var(--white);
 
   font-size: 52px;
