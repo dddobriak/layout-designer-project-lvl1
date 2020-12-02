@@ -398,7 +398,7 @@ a {
   background: var(--white);
 }
 
-.cognitive-type.section-brown .container .row:first-child {
+.section-brown .container .row:first-child {
   flex-direction: row-reverse;
 }
 
