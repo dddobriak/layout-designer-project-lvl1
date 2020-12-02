@@ -265,11 +265,11 @@ a {
   z-index: 200;
 
   margin-bottom: -200px;
-  margin-top: -20px;
 }
 
 .section-video h1 {
   margin-bottom: 30px;
+  margin-top: -20px;
   line-height: 1.1em;
 }
 
