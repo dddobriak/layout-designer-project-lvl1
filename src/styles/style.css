@@ -142,6 +142,7 @@ a {
 .btn {
   display: inline-block;
 
+  margin: 8px 0;
   padding: 12px 24px;
 
   text-decoration: none;
