@@ -115,10 +115,6 @@ img {
   height: auto;
 }
 
-input {
-  outline: none;
-}
-
 a {
   color: var(--blue);
 }
@@ -180,6 +176,10 @@ a {
 
 .align-items-center {
   align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .bg-questions {
