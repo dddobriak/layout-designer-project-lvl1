@@ -330,7 +330,6 @@ a {
   flex-grow: 1;
 
   padding: 10px 15px;
-
 }
 
 .nav-header h2 {
@@ -344,9 +343,9 @@ a {
 
   color: var(--dark);
 
-  background: var(--light);
-
   text-decoration: none;
+
+  background: var(--light);
 }
 
 .nav-item a::before {
