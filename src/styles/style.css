@@ -323,7 +323,7 @@ a {
   counter-reset: section;
 }
 
-.main-nav li {
+.nav-item {
   display: flex;
 
   flex-basis: 33.3333%;
@@ -331,28 +331,25 @@ a {
 
   padding: 10px 15px;
 
-  text-decoration: none;
 }
 
-.main-nav li a {
-  text-decoration: none;
-}
-
-.main-nav li.nav-header .style-h2 {
+.nav-header h2 {
   color: var(--white);
 
   font-size: 52px;
 }
 
-.main-nav li.nav-item a {
+.nav-item a {
   padding: 24px;
 
   color: var(--dark);
 
   background: var(--light);
+
+  text-decoration: none;
 }
 
-.main-nav li.nav-item a::before {
+.nav-item a::before {
   display: block;
 
   margin-bottom: 20px;
@@ -365,17 +362,17 @@ a {
   counter-increment: section;
 }
 
-.main-nav li.nav-item a h3 {
+.nav-item a h3 {
   color: var(--primary);
 }
 
-.main-nav li.nav-item a:hover {
+.nav-item a:hover {
   color: var(--white);
 
   background: var(--primary);
 }
 
-.main-nav li.nav-item a:hover h3 {
+.nav-item a:hover h3 {
   color: var(--white);
 }
 
@@ -407,7 +404,7 @@ a {
   content: 'Когнитивные искажения';
 }
 
-.section-light h2::before {
+.section-light .section-title::before {
   color: var(--transp-dark);
 }
 
